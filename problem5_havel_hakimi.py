@@ -159,6 +159,7 @@ def draw_graph(G, sequence, node_labels):
         "Havel-Hakimi Graph (CS 414-4B Group 5)",
         fontsize=12, fontweight='bold', pad=15
     )
+    plt.margins(0.15)  # room for the deg= labels drawn outside the nodes
     plt.axis('off')
     plt.tight_layout()
     plt.savefig("problem5_graph.png", dpi=150)
