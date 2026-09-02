@@ -18,20 +18,19 @@ from visualization import (
     keep_windows_open,
 )
 
+"""
+Determines if a degree sequence is graphical using the Havel-Hakimi algorithm.
 
+The algorithm repeatedly:
+    1. Sorts the sequence in non-increasing order.
+    2. Removes the largest degree (d) from the front.
+    3. Subtracts 1 from the next d elements.
+    4. Repeats until all zeros (graphical) or a negative appears (not graphical).
+
+Returns True if graphical, False otherwise.
+Also prints each step of the reduction to the console.
+"""
 def is_graphical(sequence):
-    """
-    Determines if a degree sequence is graphical using the Havel-Hakimi algorithm.
-
-    The algorithm repeatedly:
-      1. Sorts the sequence in non-increasing order.
-      2. Removes the largest degree (d) from the front.
-      3. Subtracts 1 from the next d elements.
-      4. Repeats until all zeros (graphical) or a negative appears (not graphical).
-
-    Returns True if graphical, False otherwise.
-    Also prints each step of the reduction to the console.
-    """
     seq = sorted(sequence, reverse=True)
     step = 1
 
@@ -71,22 +70,8 @@ def is_graphical(sequence):
         step += 1
 
 
-def build_graph(sequence, node_labels):
-    """
-    Constructs a NetworkX graph from a graphical degree sequence using
-    the Havel-Hakimi algorithm, tracking which nodes get connected at each step.
-
-    Parameters:
-        sequence   : list of integer degrees (e.g. [5, 4, 3, 2, 1, 3])
-        node_labels: list of node names matching the degree sequence (e.g. ['v1',...,'v6'])
-
-    Returns:
-        G       : a NetworkX Graph with the correct edges
-        history : one record per step, each holding the vertex that was taken,
-                  the neighbours it connected to, and every node's remaining
-                  degree requirement afterwards (used to draw the step figure)
-    """
-    G = nx.Graph()
+def build_graph(sequence, node_labels): 
+    G = nx.Graph()                      #Graph Builder
     G.add_nodes_from(node_labels)
 
     # Pair each node label with its target degree: [(degree, label), ...]
@@ -143,7 +128,7 @@ def print_results(G, node_labels):
         print(f"    {node}: degree = {G.degree(node)}")
 
 
-def read_sequence():
+def read_sequence(): # Input validation and Normalization
     """
     Reads a degree sequence typed by the user, re-prompting until it is valid.
 
