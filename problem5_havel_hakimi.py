@@ -6,7 +6,7 @@
 # Group Members:
 #   Wency Casiño        Ken Charles Besa      Birky Pacuribot
 #   Kerby Fabria        Carl Rejas            Cj Legaspi
-#   Charles Sorongon    Joseph Pendon
+#   Charles Sorongon
 # =============================================================================
 
 import networkx as nx
