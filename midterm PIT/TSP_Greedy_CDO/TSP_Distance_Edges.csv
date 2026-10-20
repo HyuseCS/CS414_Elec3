@@ -1,0 +1,11 @@
+from,to,model_distance_km,distance_definition,data_origin
+A,B,0.316,straight-line Haversine distance; rounded to 0.001 km,calculated from cited published coordinates; NOT Google Maps road distances
+A,C,1.469,straight-line Haversine distance; rounded to 0.001 km,calculated from cited published coordinates; NOT Google Maps road distances
+A,D,1.670,straight-line Haversine distance; rounded to 0.001 km,calculated from cited published coordinates; NOT Google Maps road distances
+A,E,1.746,straight-line Haversine distance; rounded to 0.001 km,calculated from cited published coordinates; NOT Google Maps road distances
+B,C,1.157,straight-line Haversine distance; rounded to 0.001 km,calculated from cited published coordinates; NOT Google Maps road distances
+B,D,1.374,straight-line Haversine distance; rounded to 0.001 km,calculated from cited published coordinates; NOT Google Maps road distances
+B,E,1.483,straight-line Haversine distance; rounded to 0.001 km,calculated from cited published coordinates; NOT Google Maps road distances
+C,D,0.353,straight-line Haversine distance; rounded to 0.001 km,calculated from cited published coordinates; NOT Google Maps road distances
+C,E,0.687,straight-line Haversine distance; rounded to 0.001 km,calculated from cited published coordinates; NOT Google Maps road distances
+D,E,0.365,straight-line Haversine distance; rounded to 0.001 km,calculated from cited published coordinates; NOT Google Maps road distances

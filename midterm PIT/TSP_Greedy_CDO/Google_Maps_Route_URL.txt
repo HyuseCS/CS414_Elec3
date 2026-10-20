@@ -1,0 +1,3 @@
+https://www.google.com/maps/dir/?api=1&origin=Gaston+Park%2C+Cagayan+de+Oro%2C+Philippines&destination=Gaston+Park%2C+Cagayan+de+Oro%2C+Philippines&travelmode=walking&waypoints=Plaza+Divisoria%2C+Cagayan+de+Oro%2C+Philippines%7CAyala+Malls+Centrio%2C+Cagayan+de+Oro%2C+Philippines%7CSM+CDO+Downtown%2C+Cagayan+de+Oro%2C+Philippines%7CLimketkai+Mall%2C+Cagayan+de+Oro%2C+Philippines
+
+NOTE: Google Maps shows actual walking directions, which need not match the straight-line graph weights used in the Python model.

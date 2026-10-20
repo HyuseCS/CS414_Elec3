@@ -1,0 +1,6 @@
+location_id,location_name,latitude,longitude,coordinate_source_url,data_type
+A,Gaston Park,8.47542,124.64214,https://mapcarta.com/W581430595,published coordinates; approximate feature center
+B,Plaza Divisoria,8.47775,124.643778,https://en.wikipedia.org/wiki/Plaza_Divisoria,published coordinates; approximate feature center
+C,Ayala Malls Centrio,8.485127,124.651201,https://en.wikipedia.org/wiki/Ayala_Malls_Centrio,published coordinates; approximate feature center
+D,SM CDO Downtown,8.4843833,124.6543222,https://www.wikidata.org/wiki/Q29586843,published coordinates; approximate feature center
+E,Limketkai Mall,8.48197,124.65657,https://mapcarta.com/W129409508,published coordinates; approximate feature center

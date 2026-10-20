@@ -1,0 +1,14 @@
+ALGORITHM REFERENCE
+R. Luna-Garcia, T. M. C. Candano, and R. L. Caga-anan, "Performance Analysis of Classical Algorithms for the Traveling Salesman Problem," The Mindanawan Journal of Mathematics, vol. 6, no. 2, pp. 79-111, 2024. https://doi.org/10.62071/tmjm.v6i2.716 (Section 2.7, Algorithm 2.7, Theorem 2.7, pp. 88-89)
+
+COORDINATE SOURCES
+A. Gaston Park: https://mapcarta.com/W581430595 | latitude 8.47542, longitude 124.64214
+B. Plaza Divisoria: https://en.wikipedia.org/wiki/Plaza_Divisoria | latitude 8.47775, longitude 124.643778
+C. Ayala Malls Centrio: https://en.wikipedia.org/wiki/Ayala_Malls_Centrio | latitude 8.485127, longitude 124.651201
+D. SM CDO Downtown: https://www.wikidata.org/wiki/Q29586843 | latitude 8.4843833, longitude 124.6543222
+E. Limketkai Mall: https://mapcarta.com/W129409508 | latitude 8.48197, longitude 124.65657
+
+MAP TOOLS
+Google Maps distance-measurement guidance: https://support.google.com/maps/answer/1628031?hl=en
+Google Maps URL syntax: https://developers.google.com/maps/documentation/urls/get-started
+The script calculates Haversine distances from published coordinates. Numerical weights ARE NOT Google Maps route distances.
