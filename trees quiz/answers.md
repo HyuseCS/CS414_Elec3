@@ -4,11 +4,7 @@
 
 Order 8, six vertices of degree 1, two vertices of degree 4.
 
-```
-a1   a2   a3          b1   b2   b3
-  \   |   /             \   |   /
-      A ------------------- B
-```
+![Number 1 graph](number1.png)
 
 - A connects to a1, a2, a3 and B, so deg(A) = 4.
 - B connects to b1, b2, b3 and A, so deg(B) = 4.
@@ -19,13 +15,7 @@ a1   a2   a3          b1   b2   b3
 
 Order 8, degree sequence 3, 3, 3, 1, 1, 1, 1, 1.
 
-```
-a1      a2                c1      c2
-  \    /                    \    /
-    A ---------- B ---------- C
-                 |
-                 b1
-```
+![Number 2 graph](number2.png)
 
 - deg(A) = 3 (a1, a2, B)
 - deg(B) = 3 (A, C, b1)
@@ -54,9 +44,7 @@ The only change from normal Kruskal is the sort order. Normal Kruskal sorts from
 
 Result (maximum spanning tree):
 
-```
-u --6-- v --5-- z --4-- y --5-- x --7-- w
-```
+![Number 4 graph](number4.png)
 
 | Order | Edge | Weight |
 |-------|------|--------|
@@ -70,14 +58,7 @@ Total weight = 7 + 6 + 5 + 5 + 4 = **27**
 
 ## Number 5
 
-```
-a --------- c
-| \         | \
-|   \       |   \
-|     \     |     e ------ f ------ g ------ i
-|       \   |   /          |
-b --------- d              h
-```
+![Number 5 graph](number5.png)
 
 - **Cut vertex:** a vertex that splits the graph into more pieces when you remove it.
 - **Bridge:** an edge that splits the graph into more pieces when you remove it.
