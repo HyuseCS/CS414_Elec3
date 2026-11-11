@@ -52,13 +52,56 @@ The only change from normal Kruskal is the sort order. Normal Kruskal sorts from
 
 ## Number 4
 
-TODO: needs the graph.
+Result (maximum spanning tree):
+
+```
+u --6-- v --5-- z --4-- y --5-- x --7-- w
+```
+
+| Order | Edge | Weight |
+|-------|------|--------|
+| 1 | x–w | 7 |
+| 2 | u–v | 6 |
+| 3 | v–z | 5 |
+| 4 | x–y | 5 |
+| 5 | y–z | 4 |
+
+Total weight = 7 + 6 + 5 + 5 + 4 = **27**
 
 ## Number 5
 
-TODO: needs the graph. Find the branch, cut vertex, block and bridges.
+```
+a --------- c
+| \         | \
+|   \       |   \
+|     \     |     e ------ f ------ g ------ i
+|       \   |   /          |
+b --------- d              h
+```
 
 - **Cut vertex:** a vertex that splits the graph into more pieces when you remove it.
 - **Bridge:** an edge that splits the graph into more pieces when you remove it.
 - **Block:** a largest connected piece of the graph that has no cut vertex of its own.
-- **Branch:** an edge of the spanning tree. An edge that is not in the tree is a "chord".
+- **Branch (of a cut vertex v):** a piece left when you remove v, with v put back.
+
+**a) Cut vertices: 3**
+
+{e, f, g}
+
+**b) Branches**
+
+- Branches of e: 2 → {a, b, c, d, e} and {e, f, g, h, i}
+- Branches of f: 3 → {a, b, c, d, e, f}, {f, g, i} and {f, h}
+- Branches of g: 2 → {a, b, c, d, e, f, g, h} and {g, i}
+
+**c) Blocks: 5**
+
+- B1: {a, b, c, d, e}
+- B2: e–f
+- B3: f–h
+- B4: f–g
+- B5: g–i
+
+**d) Bridges: 4**
+
+e–f, f–g, g–i, f–h
